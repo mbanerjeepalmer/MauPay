@@ -1,5 +1,5 @@
 # TODO
 - [ ] Fix how the template sits in SvelteKit
-  - [ ] Fix JavasScript
+  - [ ] Fix JavaScript
   - [ ] Split into components
 - [ ] Fix Tailwind process
