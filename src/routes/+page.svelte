@@ -14,9 +14,9 @@
 >
   <Nav />
   <Hero />
-  <Showcase />
+  <!-- <Showcase />
   <Explore />
   <Pricing />
-  <SubHero />
+  <SubHero /> -->
   <Footer />
 </body>
