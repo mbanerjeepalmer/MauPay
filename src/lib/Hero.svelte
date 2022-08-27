@@ -1,21 +1,25 @@
+<script>
+import Email from "./Email.svelte";
+
+</script>
 <div class="pt-24">
     <div class="container px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-center text-center md:text-left space-x-2">
+      <div class="flex flex-col w-full md:w-2/5 justify-center items-center text-center md:text-left">
         <p class="uppercase tracking-loose w-full">Probably on the blockchain</p>
         <h1 class="my-4 text-5xl font-bold leading-tight">
-          Buy Now, Maupay Later
+          Get the MauPay wallet
         </h1>
         <p class="leading-normal text-2xl mb-8">
-          No more negotiation nonsense.
-          Buy Neal for your club using MauPay.
+          Put the pay into Maupay.
         </p>
-        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <Email/>
+        <!-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Join the waitlist
-        </button>
+        </button> -->
       </div>
       <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6 text-center">
+      <div class="w-full md:w-3/5 py-6 px-4 text-center">
         <img alt="Checkout form with club delivery" class="w-full md:w-4/5 z-50" src="MauPay Checkout.svg" />
       </div>
     </div>
