@@ -5,7 +5,7 @@ import Email from "./Email.svelte";
 <div class="pt-24">
     <div class="container px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-center text-center md:text-left">
+      <div class="flex flex-col w-full md:w-2/5 text-center md:text-left">
         <p class="uppercase tracking-loose w-full">Probably on the blockchain</p>
         <h1 class="my-4 text-5xl font-bold leading-tight">
           Get the MauPay wallet
@@ -13,7 +13,9 @@ import Email from "./Email.svelte";
         <p class="leading-normal text-2xl mb-8">
           Put the pay into Maupay.
         </p>
+	<div class="place-self-center md:place-self-start">
         <Email/>
+	</div>
         <!-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Join the waitlist
         </button> -->
