@@ -29,7 +29,7 @@
 		name="email"
 		id="bd-email"
 	/>
-    <button class="bg-yellow-400 rounded-lg font-medium row-start-2 justify-self-end py-2 px-2">Wait</button>
+    <button class="bg-yellow-400 rounded-lg font-medium row-start-2 justify-self-end py-2 px-2">Join</button>
 	<!-- <button class="row-start-2 justify-self-end bg-yellow-400 rounded-lg py-1 px-2"> -->
 	<!-- <a
 		class="row-start-3 col-span-2 
