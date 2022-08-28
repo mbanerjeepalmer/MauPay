@@ -15,3 +15,4 @@
   - [ ] Investment - 'because we can barely manage our own money'
   - [ ] NealFTs - fancoin thing
   - [ ] Buy Now Maupay Later
+- [ ] 
