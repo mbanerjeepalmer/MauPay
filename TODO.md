@@ -15,4 +15,13 @@
   - [ ] Investment - 'because we can barely manage our own money'
   - [ ] NealFTs - fancoin thing
   - [ ] Buy Now Maupay Later
+<<<<<<< Updated upstream
 - [ ] 
+=======
+
+  
+## 28th
+- [ ] Sendgrid
+  - Account setup done
+  - Just need to copy/paste from Scott and Sendgrid.
+>>>>>>> Stashed changes
