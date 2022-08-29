@@ -25,3 +25,4 @@
   - Account setup done
   - Just need to copy/paste from Scott and Sendgrid.
 >>>>>>> Stashed changes
+It's not at all obvious from SvelteKit hooks documentation that the request or url is being destructured from the event

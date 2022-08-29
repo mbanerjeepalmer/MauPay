@@ -33,7 +33,7 @@
 <form class="max-w-lg grid auto-cols-min items-stretch gap-x-2 gap-y-1"
 on:submit|preventDefault={joinWaitlist}>
 	<label class=" row-start-1 self-end font-medium" for="bd-email"
-		>Join the waitlist</label
+		>Join the waitlist, join the revolution.</label
 	>
 	<input
 		class="min-w-40 row-start-2 rounded p-2 text-gray-800"

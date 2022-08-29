@@ -22,19 +22,23 @@ const data = {
 const sendgridRequest = {
   url: `/v3/marketing/contacts`,
   method: 'PUT',
-  body: data
+  body: JSON.stringify(data)
 }
+console.info(sendgridRequest)
+
+let statusCode;
+let message;
 
 client.request(sendgridRequest)
   .then(([response, body]) => {
     console.log(response.statusCode);
     console.log(response.body);
-    return new Response(JSON.stringify({message: 'Good'}))
+    message = response.body
   })
   .catch(error => {
     console.error(error);
-    return new Response(JSON.stringify({message: 'Bad.'}))
+    message = error
   });
 
-  
+  return new Response(JSON.stringify({message: message}))
 }
