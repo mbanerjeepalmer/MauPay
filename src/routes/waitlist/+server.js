@@ -1,37 +1,40 @@
 import 'dotenv/config'
+import client from '@sendgrid/client'
 
-export function PUT ({}) {
+
+export async function PUT ({request}) {
+  const submission = await request.json()
+  console.log(submission.email)
   
-  return new Response('blah')
+  
 
-// const client = require('@sendgrid/client');
-// client.setApiKey(process.env.SENDGRID_API_KEY);
 
-// const data = {
-//   "contacts": [
-//     {
-//       "email": "ryan39@lee-young.com",
-//       "custom_fields": {
-//         "w1": "2002-10-02T15:00:00Z",
-//         "w33": 9.5,
-//         "e2": "Coffee is a beverage that puts one to sleep when not drank."
-//       }
-//     }
-//   ]
-// };
+client.setApiKey(process.env.SENDGRID_API_KEY);
 
-// const request = {
-//   url: `/v3/marketing/contacts`,
-//   method: 'PUT',
-//   body: data
-// }
+const data = {
+  "contacts": [
+    {
+      "email": submission.email
+    }
+  ]
+};
 
-// client.request(request)
-//   .then(([response, body]) => {
-//     console.log(response.statusCode);
-//     console.log(response.body);
-//   })
-//   .catch(error => {
-//     console.error(error);
-//   });
+const sendgridRequest = {
+  url: `/v3/marketing/contacts`,
+  method: 'PUT',
+  body: data
+}
+
+client.request(sendgridRequest)
+  .then(([response, body]) => {
+    console.log(response.statusCode);
+    console.log(response.body);
+    return new Response(JSON.stringify({message: 'Good'}))
+  })
+  .catch(error => {
+    console.error(error);
+    return new Response(JSON.stringify({message: 'Bad.'}))
+  });
+
+  
 }
